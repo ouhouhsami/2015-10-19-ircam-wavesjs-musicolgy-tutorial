@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Introduction au Web Audio, Europeana Sounds</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./static/css/style.css">
+    <style>
+      body { font-family: 'Droid Serif'; }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: center, middle
+
+# waves.js tutoriel
+
+Ircam - 19 Oct. 2015
+
+Benjamin Matuszewski et Samuel Goldszmidt
+
+---
+
+# Plan
+
+1. Le projet WAVE
+1. La librairie waves.js
+1. Hands-on session
+1. Cas d'usages
+
+---
+
+# Le projet WAVE
+
+* wave.ircam.fr
+* Les démonstrateurs réalisés
+   * http://wave.ircam.fr/demo/
+   * http://wave.ircam.fr/demo/playback-control/
+---
+# La Librarie waves.js
+
+## UI (dossier examples de wavesjs/ui)
+
+* Timeline, Track, Layer, Shape (Marker, Segment, BPF)
+* Axis, Zoom, Interactions
+
+
+* http://0.0.0.0:8080/examples/layer-marker.html
+* http://0.0.0.0:8080/examples/layer-segment.html
+* http://0.0.0.0:8080/examples/layer-trace.html
+* http://0.0.0.0:8080/examples/layer-waveform.html
+* http://0.0.0.0:8080/examples/states-zoom.html
+* http://0.0.0.0:8080/examples/layer-axis.html
+
+
+---
+
+# La Librarie waves.js
+
+## audio (dossier examples de wavesjs/audio)
+
+* Moteur audio (simple, granulaire, segmenté)
+* Transport
+
+
+* http://0.0.0.0:8080/examples/transport.html
+* http://0.0.0.0:8080/examples/audio-time-engine.html
+* http://0.0.0.0:8080/examples/granular-engine.html
+---
+
+# Hands-on session
+
+## Les bases du Web
+
+* Client / Serveur
+* HTML, CSS, JavaScript
+* Balise "audio"
+* Un format de données pour le web : JSON
+
+---
+
+# Hands-on session
+
+## Installation
+
+* Editeur - Sublime Text (http://www.sublimetext.com/2)
+* Serveur :
+    Option 1 - Node (https://nodejs.org/en/download/)
+    ```bash
+    npm install -g http-server
+    http-server
+    ```
+    Option 2 - Python (https://www.python.org/downloads/)
+    ```bash
+    python -m SimpleHTTPServer
+    ```
+* Navigateur (Chrome, Firefox ou Safari)
+
+---
+
+# Hands-on session
+
+### template
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+<body>
+
+</body>
+</html>
+```
+
+### titre de la page
+
+---
+
+# Hands-on session
+
+### titre, paragraphe, lien etc.
+http://dougbelshaw.com/HTML.pdf
+
+### audio
+fichier audio : https://raw.githubusercontent.com/Ircam-RnD/waveform-visualizer-component/master/data/drum-loop.wav
+
+---
+
+# Hands-on session
+
+### waveform visualizer
+
+* Organisation du répertoire projet (html, js, css, assets)
+* Insérer le "polyfill"
+* Insérer le link html
+* Créer un fichier JSON avec données de segmentation
+* Créer le tag html
+
+https://github.com/Ircam-RnD/waveform-visualizer-component
+
+---
+
+# Idées / Retours
+
+> Importance de la formalisation de vos cas d'usage et des données
+
+
+    </textarea>
+    <script src="static/js/remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>
